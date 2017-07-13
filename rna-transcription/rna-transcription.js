@@ -1,7 +1,7 @@
 var dnaTranscriber = function() {};
 
 dnaTranscriber.prototype.toRna = function(dna) {
-    length = dna.length;
+    var length = dna.length;
     var rna = '';
     var transcriber = {
         G: 'C',
@@ -10,7 +10,7 @@ dnaTranscriber.prototype.toRna = function(dna) {
         A: 'U'
     };
 
-    for (var i = 0; i <= length; i++) {
+    for (var i = 0; i < length; i++) {
         var currDna = dna[i];
         rna += transcriber.currDna;
     }
